@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+.scrol{
+    animation-name: scrol-img;
+    animation-duration: 15s;
+}
+@keyframes scrol-img {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+.ser:hover .service-1{
+    color: #E7008A;
+ 
+}
+
+
+
+.hide:hover .show{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.foot:hover .foot-1{
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+   
+}
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(107, 222, 239); 
+    border-radius: 10px;
+   
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+  .slid-1{
+    animation-name: slid;
+    animation-duration: 3s;
+  }
+
+  @keyframes slid {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+  }
+  .slid-2{
+    animation-name: scrol-1;
+    animation-duration: 3s;
+  }
+  @keyframes scrol-1 {
+    0%{
+        transform: translateX(100%);
+    }
+    
+  }
+  .selling{
+    animation-name: top;
+    animation-duration: 3s;
+  }
+  @keyframes top {
+    100%{
+    transform: scale(1);
+    }
+    0%{
+        transform: scale(.7);
+ 
+    }
+    
+  }
